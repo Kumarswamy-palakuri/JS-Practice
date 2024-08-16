@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculater</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="cal">
+    <h1>Calculator</h1>
+    <div class="display-box">
+      <input type="text" id="display" readonly placeholder="0">
+    </div>
+    <div class="cal-buttons">
+      <button onclick="dvalue=dvalue+'1'; document.querySelector('#display').value=dvalue;">1</button>
+      <button onclick="dvalue=dvalue+'2'; document.querySelector('#display').value=dvalue;">2</button>
+      <button onclick="dvalue=dvalue+'3'; document.querySelector('#display').value=dvalue;">3</button>
+      <button onclick="dvalue=dvalue+'+'; document.querySelector('#display').value=dvalue;">+</button>
+      <button onclick="dvalue=dvalue+'4'; document.querySelector('#display').value=dvalue;">4</button>
+      <button onclick="dvalue=dvalue+'5'; document.querySelector('#display').value=dvalue;">5</button>
+      <button onclick="dvalue=dvalue+'6'; document.querySelector('#display').value=dvalue;">6</button>
+      <button onclick="dvalue=dvalue+'-'; document.querySelector('#display').value=dvalue;">-</button>
+      <button onclick="dvalue=dvalue+'7'; document.querySelector('#display').value=dvalue;">7</button>
+      <button onclick="dvalue=dvalue+'8'; document.querySelector('#display').value=dvalue;">8</button>
+      <button onclick="dvalue=dvalue+'9'; document.querySelector('#display').value=dvalue;">9</button>
+      <button onclick="dvalue=dvalue+'*'; document.querySelector('#display').value=dvalue;">*</button>
+      <button onclick="dvalue=dvalue+'0'; document.querySelector('#display').value=dvalue;">0</button>
+      <button onclick="dvalue=dvalue+'/'; document.querySelector('#display').value=dvalue;">/</button>
+      <button  onclick="dvalue=eval(dvalue); document.querySelector('#display').value=dvalue;">=</button>
+      <button  onclick="dvalue=''; document.querySelector('#display').value=dvalue;">C</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
