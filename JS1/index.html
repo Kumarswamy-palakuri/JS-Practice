@@ -27,8 +27,8 @@
       <button onclick="dvalue=dvalue+'*'; document.querySelector('#display').value=dvalue;">*</button>
       <button onclick="dvalue=dvalue+'0'; document.querySelector('#display').value=dvalue;">0</button>
       <button onclick="dvalue=dvalue+'/'; document.querySelector('#display').value=dvalue;">/</button>
-      <button  onclick="dvalue=eval(dvalue); document.querySelector('#display').value=dvalue;">=</button>
       <button  onclick="dvalue=''; document.querySelector('#display').value=dvalue;">C</button>
+      <button id="eq" onclick="dvalue=eval(dvalue); document.querySelector('#display').value=dvalue;">=</button>
     </div>
   </div>
   <script src="script.js"></script>
