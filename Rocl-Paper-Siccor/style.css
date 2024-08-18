@@ -4,17 +4,21 @@
   box-sizing: border-box;
 }
 .heading{
-  color:red;
+  color:#e7b2b9;
   font-size: 28px;
 }
 .container{
   /* text-align: center; */
   display: flex;
+  width: 320px;
   flex-direction: column;
   align-items: center;
-  width: 500px;
   margin:20px  auto;
-  border: 1px solid red;
+  border: 3px solid red;
+  background-color: #5e5e6c;
+  border-radius: 15px;
+  padding: 8px;
+  color: #BDE8CA;
 }
 .choice_buttons{
   margin: 10px;
@@ -32,10 +36,10 @@
 }
 .result-container{
   /* border: 1px solid red; */
-  width: 45%;
-  /* margin-right: 40px; */
+  width: 80%;
+  /* margin: 40px; */
 }
-.result-container .result{
+.result{
   /* border: 1px solid red; */
   margin-bottom: 12px;
   /* margin-right: 40px; */
@@ -48,9 +52,15 @@
 }
 #play_again{
   padding: 4px 8px;
+  font-size: 22px;
   border: none;
   border-radius: 4px;
   background-color: rgb(250, 183, 183);
   color: rgb(19, 16, 16);
   font-weight: 400;
+}
+@media(max-width: 600px) {
+  .choice_buttons button{
+    font-size: 25px;
+  }
 }

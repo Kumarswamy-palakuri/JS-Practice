@@ -20,31 +20,31 @@ function game(choice){
   if(choice==cmp_guess)
   {
     won.innerText='Game Tie';
-    won.style.color="green";
+    won.style.color="#FAA916";
   }
   else if(choice=='ROCK' && cmp_guess=='SICSSORS'){
     won.innerText='You Won';
-    won.style.color="red";
+    won.style.color="#1B1B1E";
   }
   else if(choice=='SICSSORS' && cmp_guess=='ROCK'){
     won.innerText='computer Won';
-    won.style.color="red";
+    won.style.color="#1B1B1E";
   }
   else if(choice=='PAPER' && cmp_guess=='SICSSORS'){
     won.innerText='computer Won';
-    won.style.color="red";
+    won.style.color="#1B1B1E";
   }
   else if(choice=='SICSSORS' && cmp_guess=='PAPER'){
     won.innerText='you Won';
-    won.style.color="red";
+    won.style.color="#1B1B1E";
   }
   else if(choice=='ROCK' && cmp_guess=='PAPER'){
     won.innerText='computer Won';
-    won.style.color="red";
+    won.style.color="#1B1B1E";
   }
   else{
     won.innerText='You Won';
-    won.style.color="red";
+    won.style.color="#1B1B1E";
   }
   }
 }
