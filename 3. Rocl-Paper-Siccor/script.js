@@ -47,7 +47,7 @@ function game(choice){
     c+=1
   }
   else if(choice=='SICSSORS' && cmp_guess=='PAPER'){
-    won.innerText='you Won';
+    won.innerText='You Won';
     won.style.color="#1B1B1E";
     y+=1
   }
