@@ -9,16 +9,24 @@
 <body>
   <div class="container">
     <h2 class="heading">Rock Paper Siccors</h2>
-    <h4>Choose your chosice</h4>
+    <h4>Choose your choice</h4>
+    <div class="score">
+      <div class="y_score">
+        <span>You: </span><span id="y_sc">00</span>
+      </div>
+      <div class="c_score">
+        <span>Comp: </span><span id="c_sc">00</span>
+      </div>
+    </div>
     <div class="choice_buttons">
       <button id="rock" onclick="game('ROCK')">Rock</button>
       <button id="paper" onclick="game('PAPER')">paper</button>
-      <button id="siccor" onclick="game('SISCCORS')">Siccors</button>
+      <button id="siccor" onclick="game('SICSSORS')">Siccors</button>
     </div>
     <div class="result-container">
       <h2 class="result">Results</h2>
-      <p id="u_choice">Your Choice:</p>
-      <p id="c_choice">Computer Choice:</p>
+      <span>Your Choice: </span><span id="u_choice"></span><br>
+      <span>Computer Choice: </span><span id="c_choice"></span>
     </div>
     <h1 id="won"></h1>
     <button id="play_again" onclick="game('reset')">Play Again</button>
