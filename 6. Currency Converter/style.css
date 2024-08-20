@@ -13,8 +13,6 @@ body{
   min-height: 100vh;
   padding: 0 10px;
   background-image: linear-gradient(to right, #00b4db, #0083b0);
-
-
 }
 ::selection{
   color: #fff;
@@ -131,8 +129,10 @@ form button:hover{
   color: #035c7a;
 }
 
-@media (max-width: 700px){
-  
+@media (max-width: 400px){
+body{
+  margin-top: -70px;
+}
 .wrapper{
   width: 370px;
 }
