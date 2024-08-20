@@ -19,12 +19,14 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(139,163,176,1) 0%, rg
 .container h2{
   margin-top: 10px;
   text-align: center;
+  color: rgb(35, 67, 67);
 }
 .taskInput{
   text-align: center;
   /* border: 1px solid red ; */
   padding: 5px 8px;
   margin: 10px 10px;
+  margin-left: -10px;
 }
 .taskInput input{
   border-radius: 5px;
@@ -51,7 +53,40 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(139,163,176,1) 0%, rg
   margin-left: 20px;
 }
 .list-styling{
-  font-size: 22px;
-  color: rgb(0, 0, 0);
+  font-size: 18px;
+  color: rgb(10, 8, 8);
   cursor: pointer;
+  margin-left:12px;
+}
+@media(max-width: 600px) {
+  .container{
+    height: 60vh;
+    margin-top:8vh ;
+  }
+  .container h2{
+    font-size: 30px;
+  }
+  .taskInput{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+    /* text-align: center; */
+    /* border: 1px solid red ; */
+    /* padding: 5px 8px; */
+    /* margin: 10px 10px;*/
+    margin-left: 10px; 
+  }
+  .taskInput input{
+    width: 220px;
+    height: 50px;
+    font-size: 20px;
+  }
+  .taskInput button{
+    height: 50px;
+    width: 50px;
+  }
+  .taskInput input::placeholder{
+    font-size: 20px;
+  }
 }
