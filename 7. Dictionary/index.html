@@ -5,11 +5,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ToDoList</title>
   <link rel="stylesheet" href="style.css">
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
 </head>
 <body>
   <div class="container">
-    
+    <div class="inputContainer">
+      <input type="text" id="inputText" value="" placeholder="Enter Text...."><button id="btn">
+        <i class="fa-solid fa-magnifying-glass" style="color: #B197FC;"></i></button>
+    </div>
+    <div class="d-error">
+    <div class="resultContainer">
+      <div class="inputRepeat">
+        <h2 id="result_head"></h2>
+        <!-- <i class="fa-solid fa-volume-high" style="color: #B197FC;"></i> -->
+      </div>
+      <p id="partsOfSpeech"></p>
+      <p id="phonotics"></p>
+      <p id="synonyms"></p>
+      <p id="example"><i></i> </p>
+    </div>
+    <h2 class="error">Couldn't Find The Word</h2>
+  </div>
   </div>
   <script src="script.js"></script>
 </body>
 </html>
+<!-- 
+let result_head=document.getElementById("result_head");
+let partsOfSpeech=document.getElementById("partsOfSpeech");
+let phonotics=document.getElementById("phonotics");
+let synonyms=document.getElementById("synonyms");
+let example=document.getElementById("example"); -->
