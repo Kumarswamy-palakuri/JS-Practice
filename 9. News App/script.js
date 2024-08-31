@@ -1,5 +1,5 @@
 //API Used: http://newsapi.org/s/india-news-api
-const apiKey="e3b48acfc306478fbfd37de1160e164b"
+const apiKey="hKIBYIzsKk5J36PfQTCl1j6Yp4O0E6FBgiJJIqcJ"
 const container = document.querySelector(".container");
 const optionsContainer = document.querySelector(".options-container");
 // "in" stands for India
@@ -56,7 +56,8 @@ const selectCategory = (e, category) => {
   options.forEach((element) => {
     element.classList.remove("active");
   });
-  requestURL = `https://newsapi.org/v2/top-headlines?country=${country}&category=${category}&apiKey=${apiKey}`;
+  // requestURL = `https://newsapi.org/v2/top-headlines?country=${country}&category=${category}&apiKey=${apiKey}`;
+  requestURL = `https://api.thenewsapi.com/v1/news/headlines?locale=${country}&language=en&api_token=${apiKey}`;
   e.target.classList.add("active");
   getNews();
 };
@@ -77,6 +78,7 @@ const init = () => {
 };
 
 window.onload = () => {
-  requestURL = `https://newsapi.org/v2/top-headlines?country=${country}&category=general&apiKey=${apiKey}`;
+  // requestURL = `https://newsapi.org/v2/top-headlines?country=${country}&category=general&apiKey=${apiKey}`;
+  requestURL = `https://api.thenewsapi.com/v1/news/headlines?locale=${country}&language=en&api_token=${apiKey}`;
   init();
 };
