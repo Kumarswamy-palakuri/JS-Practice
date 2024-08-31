@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weight converter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Weight Convereter</h1>
+    <p class="margin"></p>
+    <p class="note">Type a value in any of the feilds to convert weight</p>
+    <p>Weight in Pounds</p>
+    <input type="number"placeholder="Pounds" id="poundsInput" step="any" oninput="convertFromPounds()">
+    <p>Weight in Kilograms</p>
+    <input type="number"placeholder="Kilograms" id="kgInput" step="any" oninput="convertFromKg()" >
+    <p>Weight in Grams</p>
+    <input type="number"placeholder="Grams" id="gramsInput" step="any" oninput="convertFromGrams()" >
+    <p>Weight in Ounces</p>
+    <input type="number"placeholder="Ounces" id="ouncesInput" step="any" oninput="convertFromOunces()">
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
