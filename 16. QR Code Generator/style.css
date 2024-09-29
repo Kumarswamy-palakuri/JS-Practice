@@ -1,0 +1,90 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body{
+  background: #001F3F;
+}
+.container{
+  width: 350px;
+  margin:20px  auto 2px;
+  padding:20px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  border-radius: 8px;
+}
+.container h3{
+  font-size: 1.3em;
+  font-weight: 500;
+}
+#input{
+  margin: 10px 0px;
+  width: 90%;
+  padding: 10px;
+  outline: none;
+  border: 3px solid #EAD8B1;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.container img{
+  margin: 10px 0px;
+  width: 80%;
+  padding: 5px;
+  border-radius: 5px;
+  display: none;
+  border: 3px solid #EAD8B1;
+}
+.buttons{
+  width: 90%;
+}
+.buttons #genarate{
+  margin: 10px 0px;
+  width: 90%;
+  padding: 10px;
+  font-size: 1em;
+  font-weight: 500;
+  background-color:#6A9AB0 ;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+a{
+  text-decoration: none;
+}
+.buttons i{
+  font-size: 1em;
+  cursor: pointer;
+  color: #000;
+}
+.buttons i:hover{
+  color: rgb(225, 106, 106);
+}
+#genarate:hover{
+  color:#001F3F
+}
+#design{
+  font-size: 0.7em;
+  color: wheat;
+  text-align: center;
+  opacity: 0.7;
+}
+@media (max-width:600px) {
+  .container{
+    margin-top: 50px;
+  }
+  .container img{
+    width: 80%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 3px solid #EAD8B1;
+  }
+  #design{
+    font-size: 0.8em;
+  }
+}

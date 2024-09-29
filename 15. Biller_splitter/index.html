@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bill-splitter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <p>Bill</p>
+        <input type="number" id="bill" placeholder="₹ 1000" />
+        <h4>Select Tip</h4>
+        <div class="buttons">
+          <button onclick="tip_value(5)">5%</button>
+          <button onclick="tip_value(10)">10%</button>
+          <button onclick="tip_value(15)">15%</button>
+          <button onclick="tip_value(25)">25%</button>
+          <button onclick="tip_value(50)">50%</button>
+          <button onclick="tip_value(75)">75%</button>
+        </div>
+        <input type="number" id="custom-tip" class="blur" value="" placeholder=" Custom tip" />
+        <p>Number of people</p>
+        <input type="number" id="numPeo"  class="blur" placeholder="5" />
+        <button class="generate" id="generate" onclick="generate_bill()">Generate Bill</button>
+      </div>
+      <div class="right">
+        <p id="tip">Tip amount<span>₹0</span></p>
+        <p id="total">Total <span>₹0</span></p>
+        <p id="eachsplit">Each Person Bill <span>₹0</span></p>
+        <button id="reset" onclick="re_set()">Reset</button>
+      </div>
+    </div>
+    <p id="design">designed by &copy Kumara-swamy</p>
+    <script src="script.js"></script>
+  </body>
+</html>

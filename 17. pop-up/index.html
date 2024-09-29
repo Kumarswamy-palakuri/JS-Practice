@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pop-up</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <button class="openbtn" type="button" onclick="openPopup()">Click</button>
+    <div class="popup">
+      <img src="./tick.png" alt="">
+      <h3>Thank you</h3>
+      <p>Your details have submitted succesfully</p>
+      <button type="button" onclick="closePopup()">OK</button>
+    </div>
+    <p class="design">designed by &copy Kumara-swamy</p>
+  </div>
+  <script>
+    const popup = document.querySelector(".popup")
+    function openPopup() {
+      popup.classList.add("open")
+    }
+    function closePopup() {
+      popup.classList.remove("open")
+    }
+  </script>
+</body>
+
+</html>
