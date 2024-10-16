@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Card Slider</title>
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <style>
+        /* Add your CSS here */
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+          
+            overflow: hidden;
+        }
+
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 300px;
+            text-align: center;
+        }
+
+        .card img {
+            max-width: 50%;
+            border-radius: 10px;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+
+        p {
+            color: #555;
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            color: #333;
+        }
+
+        .swiper-pagination {
+            bottom: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .swiper-slide {
+                width: 90%;
+            }
+        }
+
+        @media (min-width: 769px) {
+            .swiper-slide {
+                width: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <div class="card">
+                <img src="https://www.w3schools.com/bootstrap4/img_avatar3.png" alt="Image 1">
+                <h2>Card 1</h2>
+                <p>Card description goes here.</p>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="card">
+                <img src="https://www.w3schools.com/bootstrap4/img_avatar3.png" alt="Image 2">
+                <h2>Card 2</h2>
+                <p>Card description goes here.</p>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="card">
+                <img src="https://www.w3schools.com/bootstrap4/img_avatar3.png" alt="Image 2">
+                <h2>Card 2</h2>
+                <p>Card description goes here.</p>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="card">
+                <img src="https://www.w3schools.com/bootstrap4/img_avatar3.png" alt="Image 2">
+                <h2>Card 2</h2>
+                <p>Card description goes here.</p>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="card">
+                <img src="https://www.w3schools.com/bootstrap4/img_avatar3.png" alt="Image 2">
+                <h2>Card 2</h2>
+                <p>Card description goes here.</p>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="card">
+                <img src="https://www.w3schools.com/bootstrap4/img_avatar3.png" alt="Image 2">
+                <h2>Card 2</h2>
+                <p>Card description goes here.</p>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="card">
+                <img src="https://www.w3schools.com/bootstrap4/img_avatar3.png" alt="Image 2">
+                <h2>Card 2</h2>
+                <p>Card description goes here.</p>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="card">
+                <img src="https://www.w3schools.com/bootstrap4/img_avatar3.png" alt="Image 2">
+                <h2>Card 2</h2>
+                <p>Card description goes here.</p>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="card">
+                <img src="https://www.w3schools.com/bootstrap4/img_avatar3.png" alt="Image 2">
+                <h2>Card 2</h2>
+                <p>Card description goes here.</p>
+            </div>
+        </div>
+        <!-- Add more slides -->
+    </div>
+    <!-- Pagination and Navigation -->
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+</div>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper-container', {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        breakpoints: {
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            1024: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+            },
+        },
+    });
+</script>
+
+</body>
+</html>

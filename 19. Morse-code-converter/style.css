@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+body {
+  display: grid;
+  place-items: center;
+  background: #384b70;
+}
+.container {
+  width: 350px;
+  margin-top: 40px;
+  background: #fff;
+  padding: 20px 30px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.container h3{
+  margin: auto;
+  font-size: 1.5em;
+  color: #FF6500;
+}
+.container h5{
+  font-size: 1em;
+  margin-top: 20px;
+}
+.container textarea{
+  width: calc(100% - 16px);
+  height: 80px;
+  margin: 5px 0px;
+  outline: none;
+  font-size: 1em;
+  border-radius: 5px;
+  padding: 5px 8px;
+  resize: vertical;
+}
+.container h4{
+  margin-top: 10px;
+}
+button{
+  margin-left: auto;
+  padding: 8px 12px;
+  background-color:#FDAF7B ;
+  font-size: 1em;
+  border: none;
+  color: #000000;
+  border-radius: 6px;
+  cursor: pointer;
+  
+}
+button:hover{
+  transition:1s;
+  background:#384B70;
+  color: #fff;
+}
+.container #result{
+  width: 100%;
+  min-height: 60px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #000;
+  border-radius: 6px;
+  font-size: 1em;
+  font-weight: 600;
+  margin:5px 0px 10px;
+  color:hsl(0, 94%, 68%) ;
+}
+#design{
+  margin-top: 5px;
+  font-size: 0.9em;
+  color: #ffffff;
+  opacity: 0.7;
+}
+@media (max-width:400px)
+{
+  .container{
+    width: 80%;
+    margin-top: 40px;
+  }
+  .container h5{
+    font-size: 1.1em;
+  }
+  .container textarea{
+    height: 120px;
+  }
+  .container #result{
+    width: 100%;
+    min-height: 90px;
+    margin-top:10px ;
+    font-size: 1.1em;
+  }
+  .container h4{
+    font-size: 1.1em;
+  }
+  #design{
+    font-size: 1em;
+  }
+}
